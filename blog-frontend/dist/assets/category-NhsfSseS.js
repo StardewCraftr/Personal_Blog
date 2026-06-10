@@ -1,0 +1,1 @@
+import{x as t}from"./index-BItw07oS.js";const o={getAll(){return t.get("/categories/public/list")},create(e,r,a){return t.post("/categories",null,{params:{name:e,parentId:r,sort:a}})},update(e,r,a,s){return t.put(`/categories/${e}`,null,{params:{name:r,parentId:a,sort:s}})},delete(e){return t.delete(`/categories/${e}`)}};export{o as c};

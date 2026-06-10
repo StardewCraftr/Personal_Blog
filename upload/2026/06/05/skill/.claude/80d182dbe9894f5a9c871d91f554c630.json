@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(SSH_ASKPASS=/tmp/ssh_pass.sh SSH_ASKPASS_REQUIRE=force DISPLAY=:0 ssh *)"
+    ]
+  }
+}

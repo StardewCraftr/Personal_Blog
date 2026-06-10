@@ -1,0 +1,19 @@
+[Unit]
+Description=Blog Backend Service
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=boke
+WorkingDirectory=/home/boke/blog-backend
+ExecStart=/usr/bin/java -jar /home/boke/blog-backend/blog-backend.jar --spring.profiles.active=prod
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+# JVM 内存配置（根据服务器内存调整）
+Environment=JAVA_OPTS=-Xms256m -Xmx512m
+
+[Install]
+WantedBy=multi-user.target

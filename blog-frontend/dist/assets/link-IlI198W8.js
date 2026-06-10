@@ -1,0 +1,1 @@
+import{x as t}from"./index-BItw07oS.js";const a={getAll(){return t.get("/links/public/list")},create(e,l,r,n,s){return t.post("/links",null,{params:{name:e,url:l,logo:r,description:n,sort:s}})},update(e,l,r,n,s,u,i){return t.put(`/links/${e}`,null,{params:{name:l,url:r,logo:n,description:s,sort:u,status:i}})},delete(e){return t.delete(`/links/${e}`)}};export{a as l};

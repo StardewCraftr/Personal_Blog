@@ -1,0 +1,1 @@
+import{x as e}from"./index-BItw07oS.js";const s={getAll(){return e.get("/tags/public/list")},create(t){return e.post("/tags",null,{params:{name:t}})},delete(t){return e.delete(`/tags/${t}`)}};export{s as t};
